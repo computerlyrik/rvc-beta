@@ -5,8 +5,8 @@ description = ""
 authors = ["lj1995"]
 license = "MIT"
 packages = [
-    { include = "assets" },
-    { include = "infer" },
+    { include = "assets", from = "." },
+    { include = "infer"},
 ]
 
 [tool.poetry.dependencies]
