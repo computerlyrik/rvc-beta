@@ -5,10 +5,10 @@ description = ""
 authors = ["lj1995"]
 license = "MIT"
 packages = [
-    { include = "configs"},
-    { include = "i18n"},
-    { include = "infer"},
-    { include = "tools"},
+    { include = "rvc-beta.configs", from="configs"},
+    { include = "rvc-beta.i18n", from="i18n"},
+    { include = "rvc-beta.infer", from="infer"},
+    { include = "rvc-beta.tools", from="tools"},
 
 ]
 
