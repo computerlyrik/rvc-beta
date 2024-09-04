@@ -5,8 +5,8 @@ description = ""
 authors = ["lj1995"]
 license = "MIT"
 packages = [
-    { include = "rvc-beta" },
-    { include = "rvc-beta/**/*.py" },
+    { include = "assets" },
+    { include = "infer" },
 ]
 
 [tool.poetry.dependencies]
