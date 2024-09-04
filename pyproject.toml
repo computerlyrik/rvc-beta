@@ -5,8 +5,11 @@ description = ""
 authors = ["lj1995"]
 license = "MIT"
 packages = [
-    { include = "assets", from = "." },
+    { include = "configs", from = "." },
+    { include = "i18n"},
     { include = "infer"},
+    { include = "tools"},
+
 ]
 
 [tool.poetry.dependencies]
