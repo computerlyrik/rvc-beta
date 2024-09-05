@@ -3,6 +3,8 @@ import os
 import sys
 import json
 import shutil
+import importlib.resources
+from pathlib import Path
 from multiprocessing import cpu_count
 
 import torch
@@ -68,7 +70,8 @@ class Config:
         for config_file in version_config_list:
             p = f"configs/inuse/{config_file}"
             if not os.path.exists(p):
-                shutil.copy(f"configs/{config_file}", p)
+                os.makedirs(Path(p).parent.resolve(), exist_ok=True)
+                shutil.copy(importlib.resources.files('rvc_beta').joinpath(f"configs/{config_file}"), p)
             with open(f"configs/inuse/{config_file}", "r") as f:
                 d[config_file] = json.load(f)
         return d
