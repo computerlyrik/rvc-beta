@@ -7,9 +7,9 @@ logger = logging.getLogger(__name__)
 import ffmpeg
 import torch
 
-from configs.config import Config
-from infer.modules.uvr5.mdxnet import MDXNetDereverb
-from infer.modules.uvr5.vr import AudioPre, AudioPreDeEcho
+from rvc_beta.configs.config import Config
+from rvc_beta.infer.modules.uvr5.mdxnet import MDXNetDereverb
+from rvc_beta.infer.modules.uvr5.vr import AudioPre, AudioPreDeEcho
 
 config = Config()
 

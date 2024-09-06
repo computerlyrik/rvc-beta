@@ -5,16 +5,16 @@ from dotenv import load_dotenv
 now_dir = os.getcwd()
 sys.path.append(now_dir)
 load_dotenv()
-from infer.modules.vc.modules import VC
-from infer.modules.uvr5.modules import uvr
-from infer.lib.train.process_ckpt import (
+from rvc_beta.infer.modules.vc.modules import VC
+from rvc_beta.infer.modules.uvr5.modules import uvr
+from rvc_beta.infer.lib.train.process_ckpt import (
     change_info,
     extract_small_model,
     merge,
     show_info,
 )
-from i18n.i18n import I18nAuto
-from configs.config import Config
+from rvc_beta.i18n.i18n import I18nAuto
+from rvc_beta.configs.config import Config
 from sklearn.cluster import MiniBatchKMeans
 import torch, platform
 import numpy as np
