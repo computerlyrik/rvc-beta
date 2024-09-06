@@ -950,6 +950,17 @@ unicode = ["unicodedata2 (>=15.1.0)"]
 woff = ["brotli (>=1.0.1)", "brotlicffi (>=0.8.0)", "zopfli (>=0.1.4)"]
 
 [[package]]
+name = "freesimplegui"
+version = "5.1.0"
+description = "The free-forever Python GUI framework."
+optional = false
+python-versions = "*"
+files = [
+    {file = "FreeSimpleGUI-5.1.0-py3-none-any.whl", hash = "sha256:9dee6408bc0df2d30327f775e5e61160085f63d0d1c2f41f83d00cb250e507c2"},
+    {file = "freesimplegui-5.1.0.tar.gz", hash = "sha256:2be084404bac9675a3082df8eb8cea4872121f166fc37298081203961618268f"},
+]
+
+[[package]]
 name = "fsspec"
 version = "2024.9.0"
 description = "File-system specification"
@@ -3485,6 +3496,26 @@ files = [
 ]
 
 [[package]]
+name = "sounddevice"
+version = "0.5.0"
+description = "Play and Record Sound with Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "sounddevice-0.5.0-py3-none-any.whl", hash = "sha256:8a734043ab1f751cb20f6f25d8f07408a1aadf2eeca923061849d38bb59f9e3d"},
+    {file = "sounddevice-0.5.0-py3-none-macosx_10_6_x86_64.macosx_10_6_universal2.whl", hash = "sha256:73eb7cb1e8ab1e1ba09c228239e9d0b160006de380921687e44610ad9a19ac32"},
+    {file = "sounddevice-0.5.0-py3-none-win32.whl", hash = "sha256:919de43040e8737258370ddf929a9cd1a3d6c493ca173bab70a3c7cb15c71e97"},
+    {file = "sounddevice-0.5.0-py3-none-win_amd64.whl", hash = "sha256:f28b7ef16f293d7b048a614dd087dfe39c3e313d94a50539bb52022b7ef27ece"},
+    {file = "sounddevice-0.5.0.tar.gz", hash = "sha256:0de95277654b3d403d9c15ded3c6cedf307e9b27cc9ce7bd995a2891d0c955af"},
+]
+
+[package.dependencies]
+CFFI = ">=1.0"
+
+[package.extras]
+numpy = ["NumPy"]
+
+[[package]]
 name = "soundfile"
 version = "0.12.1"
 description = "An audio library based on libsndfile, CFFI and NumPy"
@@ -4081,4 +4112,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "401f8aa17a4b8778795d66bd4aa17d154d6ad346d01c0066c7e6f1085f367afc"
+content-hash = "0d00e693ea4db0d96352660ebe8009e1f78f96449f225a7d95aacb274e0c21fa"

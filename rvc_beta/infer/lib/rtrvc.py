@@ -2,8 +2,8 @@ from io import BytesIO
 import os
 import sys
 import traceback
-from infer.lib import jit
-from infer.lib.jit.get_synthesizer import get_synthesizer
+from rvc_beta.infer.lib import jit
+from rvc_beta.infer.lib.jit.get_synthesizer import get_synthesizer
 from time import time as ttime
 import fairseq
 import faiss
@@ -21,7 +21,7 @@ now_dir = os.getcwd()
 sys.path.append(now_dir)
 from multiprocessing import Manager as M
 
-from configs.config import Config
+from rvc_beta.configs.config import Config
 
 # config = Config()
 

@@ -82,7 +82,7 @@ if __name__ == "__main__":
     from queue import Empty
 
     import librosa
-    from tools.torchgate import TorchGate
+    from rvc_beta.tools.torchgate import TorchGate
     import numpy as np
     import FreeSimpleGUI as sg
     import sounddevice as sd
@@ -90,9 +90,9 @@ if __name__ == "__main__":
     import torch.nn.functional as F
     import torchaudio.transforms as tat
 
-    from infer.lib import rtrvc as rvc_for_realtime
-    from i18n.i18n import I18nAuto
-    from configs.config import Config
+    from rvc_beta.infer.lib import rtrvc as rvc_for_realtime
+    from rvc_beta.i18n.i18n import I18nAuto
+    from rvc_beta.configs.config import Config
 
     i18n = I18nAuto()
 
