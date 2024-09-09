@@ -20,7 +20,7 @@ faiss-cpu = "^1.7.3"
 Jinja2 = ">=3.1.2"
 json5 = "^0.9.25"
 librosa = ">=0.9.1"
-llvmlite = {version = "0.39.0", platform = "win32"}
+llvmlite = {version = ">=0.39.0", platform = "win32"}
 Markdown = "^3.6"
 matplotlib = ">=3.7.0"
 matplotlib-inline = ">=0.1.3"
