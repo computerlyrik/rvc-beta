@@ -7,10 +7,10 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-torch = "^2.4.0"
-torchaudio = "^2.4.0"
+torch = ">=2.4.0"
+torchaudio = ">=2.4.0"
 Cython = "^3.0.11"
-gradio = "^3.34.0"
+gradio = ">=3.34.0"
 pydub = ">=0.25.1"
 soundfile = ">=0.12.1"
 ffmpeg-python = ">=0.2.0"
